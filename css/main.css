@@ -1416,11 +1416,19 @@ input[type="checkbox"]:checked:focus {
   transition-duration: 500ms !important;
 }
 
-.animation-delay-2000 {
+.delay-1 {
+  animation-delay: 1s !important;
+}
+
+.delay-2 {
   animation-delay: 2s !important;
 }
 
-.animation-delay-4000 {
+.delay-3 {
+  animation-delay: 3s !important;
+}
+
+.delay-4 {
   animation-delay: 4s !important;
 }
 
