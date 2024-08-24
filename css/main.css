@@ -673,10 +673,6 @@ input[type="checkbox"]:checked:focus {
   bottom: 15rem !important;
 }
 
-.bottom-64 {
-  bottom: 16rem !important;
-}
-
 .left-1\/2 {
   left: 50% !important;
 }
@@ -699,10 +695,6 @@ input[type="checkbox"]:checked:focus {
 
 .right-60 {
   right: 15rem !important;
-}
-
-.bottom-40 {
-  bottom: 10rem !important;
 }
 
 .-z-10 {
@@ -877,17 +869,17 @@ input[type="checkbox"]:checked:focus {
   width: auto !important;
 }
 
+.w-fit {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
 .w-full {
   width: 100% !important;
 }
 
 .w-screen {
   width: 100vw !important;
-}
-
-.w-fit {
-  width: -moz-fit-content !important;
-  width: fit-content !important;
 }
 
 .flex-1 {
@@ -993,12 +985,6 @@ input[type="checkbox"]:checked:focus {
   --tw-space-y-reverse: 0 !important;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse))) !important;
   margin-bottom: calc(1rem * var(--tw-space-y-reverse)) !important;
-}
-
-.space-y-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0 !important;
-  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse))) !important;
-  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse)) !important;
 }
 
 .divide-x > :not([hidden]) ~ :not([hidden]) {
@@ -1683,6 +1669,11 @@ option:hover {
 .dark\:text-xai-500:is(.dark *) {
   --tw-text-opacity: 1 !important;
   color: rgb(100 118 126 / var(--tw-text-opacity)) !important;
+}
+
+.dark\:text-xai-600:is(.dark *) {
+  --tw-text-opacity: 1 !important;
+  color: rgb(76 95 107 / var(--tw-text-opacity)) !important;
 }
 
 .placeholder\:dark\:text-xai-700\/50:is(.dark *)::-moz-placeholder {
