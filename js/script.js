@@ -1,32 +1,36 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const toggle = document.getElementById("toggle-mode");
-  const htmlElement = document.documentElement;
-
-  // Cek status dark mode dari localStorage
-  if (localStorage.getItem("theme") === "dark") {
-    htmlElement.classList.add("dark");
-
-    toggle.innerText = "light_mode";
-  } else {
-    htmlElement.classList.remove("dark");
-
-    toggle.innerText = "dark_mode";
+(function () {
+  if (localStorage.getItem("darkMode") === "true") {
+    document.documentElement.classList.add("dark");
   }
+})();
 
-  // Tambahkan event listener pada tombol toggle
-  toggle.addEventListener("click", function () {
-    if (htmlElement.classList.contains("dark")) {
-      // Jika class dark ada, hapus dan ubah innerText
-      htmlElement.classList.remove("dark");
-      toggle.innerText = "dark_mode";
-      localStorage.setItem("theme", "light");
-    } else {
-      // Jika class dark tidak ada, tambahkan dan ubah innerText
+document.addEventListener("DOMContentLoaded", function () {
+  var toggle = document.getElementById("toggle-mode");
+  var htmlElement = document.documentElement;
+
+  // Fungsi untuk mengatur tema
+  function setTheme(isDarkmode) {
+    if (isDarkmode) {
       htmlElement.classList.add("dark");
       toggle.innerText = "light_mode";
-      localStorage.setItem("theme", "dark");
+    } else {
+      htmlElement.classList.remove("dark");
+      toggle.innerText = "dark_mode";
     }
-  });
+  }
+
+  // Periksa status dark mode dari localStorage saat halaman pertama kali dimuat
+  var isDark = localStorage.getItem("darkMode") === "true";
+  setTheme(isDark);
+
+  if (toggle) {
+    // Tambahkan event listener pada tombol toggle
+    toggle.addEventListener("click", function () {
+      var isDark = htmlElement.classList.toggle("dark"); // Toggle class dan ambil status terbaru
+      setTheme(isDark);
+      localStorage.setItem("darkMode", isDark ? "true" : "false");
+    });
+  }
 });
 
 document.addEventListener("DOMContentLoaded", function () {

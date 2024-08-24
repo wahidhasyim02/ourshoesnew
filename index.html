@@ -4,9 +4,13 @@
 
 <head>
 	<meta name="generator" content="Hugo 0.130.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+  <script src="/js/main.js" defer></script>
+
   <title>
     OurShoes
   </title>
+
   
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,11 +60,12 @@
  
 <script src="/js/main.js"></script>
 
+<script src="/js/script.js" defer></script>
 
 </head>
 
 <body
-  class="bg-white dark:bg-xai-950 font-sans  bg-cover bg-no-repeat text-xai-600 dark:text-xai-400  transition-colors duration-600  min-h-screen  ">
+  class="bg-white dark:bg-xai-950 font-sans  bg-cover bg-no-repeat text-xai-600 dark:text-xai-400  transition-colors duration-500  min-h-screen  ">
   <header>
     <div
   class="flex px-24 text-xai-500 content-center justify-between w-full items-center h-full"
@@ -138,9 +143,7 @@
 
       
 
-<div
-  class="flex w-full content-center items-center justify-center rounded-t-3xl"
->
+<div class="flex w-full content-center items-center justify-center rounded-t-3xl">
   <div class="my-auto flex flex-col space-y-2">
     <h3 class="font-medium text-xl leading-none text-xai-500 dark:text-xai-600">
       Shoes of the Day
@@ -156,69 +159,44 @@
     </p>
 
     <button
-      class="bg-white w-fit dark:bg-xai-700 mt-12 group rounded-full px-4 shadow-lg text-lightblue-300 hover:text-lightblue-400 dark:text-lightblue-400 dark:hover:text-lightblue-500 py-1 items-center text-center flex uppercase text-lg"
-    >
+      class="bg-white w-fit dark:bg-xai-700 mt-12 group rounded-full px-4 shadow-lg text-lightblue-300 hover:text-lightblue-400 dark:text-lightblue-400 dark:hover:text-lightblue-500 py-1 items-center text-center flex uppercase text-lg">
       Buy Now
-      <span
-        class="material-symbols-outlined transition group-hover:translate-x-1"
-      >
+      <span class="material-symbols-outlined transition group-hover:translate-x-1">
         chevron_right
       </span>
     </button>
   </div>
   <div class="w-full flex flex-col z-1000 items-center h-full justify-center">
-    <div class="image-display">
-      <img
-        id="product-image"
-        src="/images/sepatu1.png"
-        class="w-[500px]"
-        alt="sepatu"
-      />
+
+
+    <div class="image-display "> <img id="product-image" src="/images/sepatu1.png" class="w-[500px] " alt="sepatu" />
     </div>
-    <div
-      id="color-picker"
-      class="w-full z-50 h-[60px] flex justify-center space-x-3"
-    >
-      <div
-        id="red"
-        class="color-btn cursor-pointer flex group justify-center items-center h-12 w-12"
-      >
+    <div id="color-picker" class="w-full z-50 h-[60px] flex justify-center space-x-3">
+      <div id="red" class="color-btn cursor-pointer flex group justify-center items-center h-12 w-12">
         <div
-          class="color-btn h-8 w-8 active group-hover:h-12 group-hover:w-12 group-hover:shadow-lg bg-[#930605] active:h-12 active:w-12 visited:h-12 visited:w-12 visited:shadow-lg duration-500 transition-transform rounded-full border-4 border-white dark:border-xai-700"
-        ></div>
+          class="color-btn h-8 w-8 active group-hover:h-12 group-hover:w-12 group-hover:shadow-lg bg-[#930605] active:h-12 active:w-12 visited:h-12 visited:w-12 visited:shadow-lg duration-500 transition-transform rounded-full border-4 border-white dark:border-xai-700">
+        </div>
       </div>
 
-      <div
-        id="yellow"
-        class="color-btn cursor-pointer flex group justify-center items-center h-12 w-12"
-      >
+      <div id="yellow" class="color-btn cursor-pointer flex group justify-center items-center h-12 w-12">
         <div
-          class="color-btn h-8 w-8 active group-hover:h-12 group-hover:w-12 group-hover:shadow-lg bg-[#C7890B] active:h-12 active:w-12 visited:h-12 visited:w-12 visited:shadow-lg duration-500 transition-transform rounded-full border-4 border-white dark:border-xai-700"
-        ></div>
+          class="color-btn h-8 w-8 active group-hover:h-12 group-hover:w-12 group-hover:shadow-lg bg-[#C7890B] active:h-12 active:w-12 visited:h-12 visited:w-12 visited:shadow-lg duration-500 transition-transform rounded-full border-4 border-white dark:border-xai-700">
+        </div>
       </div>
-      <div
-        id="green"
-        class="color-btn cursor-pointer flex group justify-center items-center h-12 w-12"
-      >
+      <div id="green" class="color-btn cursor-pointer flex group justify-center items-center h-12 w-12">
         <div
-          class="color-btn h-8 w-8 active group-hover:h-12 group-hover:w-12 group-hover:shadow-lg bg-[#429D04] active:h-12 active:w-12 visited:h-12 visited:w-12 visited:shadow-lg duration-500 transition-transform rounded-full border-4 border-white dark:border-xai-700"
-        ></div>
+          class="color-btn h-8 w-8 active group-hover:h-12 group-hover:w-12 group-hover:shadow-lg bg-[#429D04] active:h-12 active:w-12 visited:h-12 visited:w-12 visited:shadow-lg duration-500 transition-transform rounded-full border-4 border-white dark:border-xai-700">
+        </div>
       </div>
-      <div
-        id="tosca"
-        class="color-btn cursor-pointer flex group justify-center items-center h-12 w-12"
-      >
+      <div id="tosca" class="color-btn cursor-pointer flex group justify-center items-center h-12 w-12">
         <div
-          class="color-btn h-8 w-8 active group-hover:h-12 group-hover:w-12 group-hover:shadow-lg bg-[#018585] active:h-12 active:w-12 visited:h-12 visited:w-12 visited:shadow-lg duration-500 transition-transform rounded-full border-4 border-white dark:border-xai-700"
-        ></div>
+          class="color-btn h-8 w-8 active group-hover:h-12 group-hover:w-12 group-hover:shadow-lg bg-[#018585] active:h-12 active:w-12 visited:h-12 visited:w-12 visited:shadow-lg duration-500 transition-transform rounded-full border-4 border-white dark:border-xai-700">
+        </div>
       </div>
-      <div
-        id="blue"
-        class="color-btn cursor-pointer flex group justify-center items-center h-12 w-12"
-      >
+      <div id="blue" class="color-btn cursor-pointer flex group justify-center items-center h-12 w-12">
         <div
-          class="color-btn h-8 w-8 active group-hover:h-12 group-hover:w-12 group-hover:shadow-lg bg-[#0753AC] active:h-12 active:w-12 visited:h-12 visited:w-12 visited:shadow-lg duration-500 transition-transform rounded-full border-4 border-white dark:border-xai-700"
-        ></div>
+          class="color-btn h-8 w-8 active group-hover:h-12 group-hover:w-12 group-hover:shadow-lg bg-[#0753AC] active:h-12 active:w-12 visited:h-12 visited:w-12 visited:shadow-lg duration-500 transition-transform rounded-full border-4 border-white dark:border-xai-700">
+        </div>
       </div>
     </div>
   </div>
@@ -226,16 +204,11 @@
 
 
 <div
-  class="flex flex-row rounded-xl odd:bg-white/10 even:bg-white/20 dark:odd:bg-xai-700/10 dark:even:bg-xai-700/5 backdrop-blur-md"
->
+  class="flex flex-row rounded-xl odd:bg-white/10 even:bg-white/20 dark:odd:bg-xai-700/10 dark:even:bg-xai-700/5 backdrop-blur-md">
   <div class="p-4 mb-4">
     <div class="w-40 h-28 overflow-hidden relative float-start mr-4">
       
-      <img
-        src="/images/img2.png"
-        alt="First image"
-        class="w-full h-full rounded-md object-cover"
-      />
+      <img src="/images/img2.png" alt="First image" class="w-full h-full rounded-md object-cover" />
       
     </div>
     <h2 class="text-lg text-xai-500 hover:text-lightblue-300">
@@ -251,16 +224,11 @@
 
 
 <div
-  class="flex flex-row rounded-xl odd:bg-white/10 even:bg-white/20 dark:odd:bg-xai-700/10 dark:even:bg-xai-700/5 backdrop-blur-md"
->
+  class="flex flex-row rounded-xl odd:bg-white/10 even:bg-white/20 dark:odd:bg-xai-700/10 dark:even:bg-xai-700/5 backdrop-blur-md">
   <div class="p-4 mb-4">
     <div class="w-40 h-28 overflow-hidden relative float-start mr-4">
       
-      <img
-        src="/images/banner.png"
-        alt="First image"
-        class="w-full h-full rounded-md object-cover"
-      />
+      <img src="/images/banner.png" alt="First image" class="w-full h-full rounded-md object-cover" />
       
     </div>
     <h2 class="text-lg text-xai-500 hover:text-lightblue-300">
