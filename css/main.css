@@ -701,6 +701,10 @@ input[type="checkbox"]:checked:focus {
   right: 15rem !important;
 }
 
+.bottom-40 {
+  bottom: 10rem !important;
+}
+
 .-z-10 {
   z-index: -10 !important;
 }
@@ -821,6 +825,10 @@ input[type="checkbox"]:checked:focus {
   height: 100% !important;
 }
 
+.h-screen {
+  height: 100vh !important;
+}
+
 .min-h-screen {
   min-height: 100vh !important;
 }
@@ -871,6 +879,15 @@ input[type="checkbox"]:checked:focus {
 
 .w-full {
   width: 100% !important;
+}
+
+.w-screen {
+  width: 100vw !important;
+}
+
+.w-fit {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
 }
 
 .flex-1 {
@@ -976,6 +993,12 @@ input[type="checkbox"]:checked:focus {
   --tw-space-y-reverse: 0 !important;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse))) !important;
   margin-bottom: calc(1rem * var(--tw-space-y-reverse)) !important;
+}
+
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0 !important;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse))) !important;
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse)) !important;
 }
 
 .divide-x > :not([hidden]) ~ :not([hidden]) {
@@ -1298,6 +1321,10 @@ input[type="checkbox"]:checked:focus {
 
 .uppercase {
   text-transform: uppercase !important;
+}
+
+.leading-none {
+  line-height: 1 !important;
 }
 
 .text-lightblue-300 {
