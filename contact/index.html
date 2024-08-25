@@ -71,7 +71,7 @@
 </head>
 
 <body
-  class="bg-white dark:bg-xai-950 font-sans  bg-cover bg-no-repeat text-xai-600 dark:text-xai-400  transition-colors duration-500  min-h-screen  ">
+  class="bg-white dark:bg-xai-950 font-sans  bg-cover bg-no-repeat text-xai-600 dark:text-xai-400  transition-colors duration-500  max-h-screen max-w-full ">
   <header class="z-1000">
     <div
   class="flex px-24 text-xai-500 content-center justify-between w-full items-center h-full"
@@ -123,8 +123,8 @@
 
   </header>
   
-  <main class="h-screen w-screen  bg-xai-100 dark:bg-xai-900 overflow-hidden  rounded-t-3xl fixed ">
-    <div class="h-full w-full -z-10 rounded-t-3xl px-12 pb-24 pt-12 overflow-y-auto scroll-smooth ">
+  <main class="h-screen w-screen  bg-xai-100 dark:bg-xai-900   rounded-t-3xl fixed ">
+    <div class="h-full w-full -z-10 rounded-t-3xl px-12 pb-24 pt-6 overflow-y-auto scroll-smooth ">
       <div
         class="-z-10 p-40 absolute mix-blend-multiply border border-white/0 filter blur-2xl opacity-60 bottom-30 -left-10  bg-lightblue-300 rounded-full w-96 h-96 animate-blob">
       </div>
@@ -155,9 +155,8 @@
     <h1 class="text-4xl font-bold text-center mb-4">Contact</h1>
 
     <section
-      class="flex divide-x left-1/2 -translate-x-1/2 rounded-xl w-[80%] relative divide-xai-200 dark:divide-xai-800 odd:bg-white/10 even:bg-white/20 dark:odd:bg-xai-700/10 dark:even:bg-xai-700/5 backdrop-blur-md"
-    >
-      <div class="p-8 space-y-4 w-[40%]">
+      class="flex divide-x left-1/2 -translate-x-1/2 rounded-xl w-[80%] relative divide-xai-200 dark:divide-xai-800 odd:bg-white/10 even:bg-white/20 dark:odd:bg-xai-700/10 dark:even:bg-xai-700/5 backdrop-blur-md">
+      <div class="px-8 space-y-4 w-[40%]">
         <div class="flex space-x-2">
           <div>
             <span class="material-symbols-rounded p-1">location_on</span>
@@ -204,54 +203,28 @@
         </div>
       </div>
       
-      <form
-        action="/contact"
-        method="POST"
-        class="space-y-4 flex-1 p-8 justify-center content-center"
-      >
+      <form action="/contact" method="POST" class="space-y-4 flex-1 p-8 justify-center content-center">
         <div>
-          <label for="name" class="block text-sm font-medium text-xai-700"
-            >Name:</label
-          >
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your Name"
+          <label for="name" class="block text-sm font-medium text-xai-700">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name"
             class="mt-1 block w-full py-2 placeholder:text-xai-400 placeholder:dark:text-xai-700/50 bg-white outline-none px-2 dark:bg-xai-800 dark:autofill:bg-xai-600 rounded-md border border-xai-300 dark:border-xai-700 shadow-sm focus:border-lightblue-500 focus:dark:border-lightblue-500 focus:ring focus:ring-lightblue-500/20 text-base"
-            required
-          />
+            required />
         </div>
         <div>
-          <label for="email" class="block text-sm font-medium text-xai-700"
-            >Email:</label
-          >
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="example@email.com"
+          <label for="email" class="block text-sm font-medium text-xai-700">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com"
             class="mt-1 block w-full py-2 placeholder:text-xai-400 placeholder:dark:text-xai-700/50 bg-white outline-none px-2 dark:autofill:bg-xai-600 dark:bg-xai-800 rounded-md border border-xai-300 dark:border-xai-700 shadow-sm focus:border-lightblue-500 focus:dark:border-lightblue-500 focus:ring focus:ring-lightblue-500/20 text-base"
-            required
-          />
+            required />
         </div>
         <div>
-          <label for="message" class="block text-sm font-medium text-xai-700"
-            >Message:</label
-          >
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Your Message"
+          <label for="message" class="block text-sm font-medium text-xai-700">Message:</label>
+          <textarea id="message" name="message" placeholder="Your Message"
             class="mt-1 block w-full py-1 placeholder:text-xai-400 placeholder:dark:text-xai-700/50 bg-white outline-none px-2 dark:autofill:bg-xai-600 dark:bg-xai-800 rounded-md border border-xai-300 dark:border-xai-700 shadow-sm focus:border-lightblue-500 focus:dark:border-lightblue-500 focus:ring focus:ring-lightblue-500/20 text-base"
-            required
-          ></textarea>
+            required></textarea>
         </div>
         <div>
-          <button
-            type="submit"
-            class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-lightblue-600 hover:bg-lightblue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lightblue-500"
-          >
+          <button type="submit"
+            class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-lightblue-600 hover:bg-lightblue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lightblue-500">
             Send
           </button>
         </div>
