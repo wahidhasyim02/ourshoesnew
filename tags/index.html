@@ -8,13 +8,20 @@
     (function () {
       if (localStorage.getItem("darkMode") === "true") {
         document.documentElement.classList.add("dark");
+        document.getElementById("toggle-mode").innerText = "light_mode";
       } else {
         document.documentElement.classList.remove("dark");
+        document.getElementById("toggle-mode").innerText = "dark_mode";
+      }
+    })();
+    (function () {
+      if (localStorage.getItem("login") === null) {
+        btnLoginElement.classList.remove("hidden");
+      } else {
+        btnLoginElement.classList.add("hidden");
       }
     })();
   </script>
-  
-  <script src="/js/main.js" defer></script>
 
   <title>
     Tags | OurShoes
@@ -73,54 +80,92 @@
 <body
   class="bg-white dark:bg-xai-950 font-sans  bg-cover bg-no-repeat text-xai-600 dark:text-xai-400  transition-colors duration-500  max-h-screen max-w-full ">
   <header class="z-1000">
-    <div
-  class="flex px-24 text-xai-500 content-center justify-between w-full items-center h-full"
->
+    <div class="flex px-24 text-xai-500 content-center justify-between w-full items-center h-full">
+
+
   <a href="/" class="flex items-center space-x-3 group">
-    <span
-      class="material-symbols-rounded text-lightblue-300 group-hover:text-lightblue-400 text-3xl"
-      >view_cozy</span
-    >
+    <span class="material-symbols-rounded text-lightblue-300 group-hover:text-lightblue-400 text-3xl">view_cozy</span>
     <h1 class="text-3xl font-bold font-dosis">OurShoes</h1>
   </a>
 
   
 <nav class="w-auto grow flex justify-end">
-  <ul class="flex space-x-16 justify-center items-center">
-<li class="w-full flex flex-col h-full items-start justify-center group text-center">
+  <ul class="flex space-x-8 justify-center items-center">
+
+
+
+<li id="home" class="w-full flex flex-col h-full items-start justify-center group text-center">
     <a class="group-hover:text-lightblue-300 h-[60px] pr-2 flex flex-col items-start justify-center pt-1" href="/">Home
     </a>
     <div class="w-[0%] group-hover:w-[100%] h-[10%] items-start content-start relative bg-lightblue-300 duration-500">
     </div>
 </li>
-<li class="w-full flex flex-col h-full items-start justify-center group text-center">
+
+
+
+<li id="products" class="w-full flex flex-col h-full items-start justify-center group text-center">
     <a class="group-hover:text-lightblue-300 h-[60px] pr-2 flex flex-col items-start justify-center pt-1" href="/products/">Products
     </a>
     <div class="w-[0%] group-hover:w-[100%] h-[10%] items-start content-start relative bg-lightblue-300 duration-500">
     </div>
 </li>
-<li class="w-full flex flex-col h-full items-start justify-center group text-center">
+
+
+
+<li id="blog" class="w-full flex flex-col h-full items-start justify-center group text-center">
     <a class="group-hover:text-lightblue-300 h-[60px] pr-2 flex flex-col items-start justify-center pt-1" href="/posts/">Blog
     </a>
     <div class="w-[0%] group-hover:w-[100%] h-[10%] items-start content-start relative bg-lightblue-300 duration-500">
     </div>
 </li>
-<li class="w-full flex flex-col h-full items-start justify-center group text-center">
+
+
+
+<li id="contact" class="w-full flex flex-col h-full items-start justify-center group text-center">
     <a class="group-hover:text-lightblue-300 h-[60px] pr-2 flex flex-col items-start justify-center pt-1" href="/contact/">Contact
     </a>
     <div class="w-[0%] group-hover:w-[100%] h-[10%] items-start content-start relative bg-lightblue-300 duration-500">
     </div>
 </li>
-    <span
-      id="toggle-mode"
-      class="material-symbols-rounded cursor-pointer text-lightblue-300"
-      >dark_mode</span
-    >
+
+
+
+<li id="login" class="w-full flex flex-col h-full items-start justify-center group text-center">
+    <a class="group-hover:text-lightblue-300 h-[60px] pr-2 flex flex-col items-start justify-center pt-1" href="/login/">Login
+    </a>
+    <div class="w-[0%] group-hover:w-[100%] h-[10%] items-start content-start relative bg-lightblue-300 duration-500">
+    </div>
+</li>
+
+
+
+<li id="signup" class="w-full flex flex-col h-full items-start justify-center group text-center">
+    <a class="group-hover:text-lightblue-300 h-[60px] pr-2 flex flex-col items-start justify-center pt-1" href="/signup/">Signup
+    </a>
+    <div class="w-[0%] group-hover:w-[100%] h-[10%] items-start content-start relative bg-lightblue-300 duration-500">
+    </div>
+</li>
+
+    <div class="flex items-center justify-center space-x-4 divide-x-2  divide-xai-200 dark:divide-xai-800">
+      <span id="toggle-mode" class="material-symbols-rounded cursor-pointer text-lightblue-300">dark_mode</span>
+      <a id="btn-login" type="button" href="/login"
+        class="hidden items-center px-4 py-1 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-lightblue-600 hover:bg-lightblue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lightblue-500">
+        Login
+      </a>
+      <a id="btn-logout" type="button"
+        class="hidden cursor-pointer items-center px-4 py-1 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-lightblue-600 hover:bg-lightblue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lightblue-500">
+        Logout
+      </a>
+      <div id="account"
+        class="hidden cursor-pointer justify-center items-center px-1 py-1 w-8 h-8 rounded-full border border-transparent text-base font-medium   shadow-sm text-white bg-lightblue-300 hover:bg-lightblue-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lightblue-500">
+
+      </div>
+
+    </div>
+
   </ul>
 </nav>
-
 </div>
-
   </header>
   
   <main class="h-screen w-screen  bg-xai-100 dark:bg-xai-900   rounded-t-3xl fixed ">
@@ -237,6 +282,8 @@
   </footer>
   
   <script src="/js/script.js" defer></script>
+  
+  <script src="/js/account.js" defer></script>
 </body>
 
 </html>
