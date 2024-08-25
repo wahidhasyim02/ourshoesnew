@@ -1,38 +1,3 @@
-(function () {
-  if (localStorage.getItem("darkMode") === "true") {
-    document.documentElement.classList.add("dark");
-  }
-})();
-
-document.addEventListener("DOMContentLoaded", function () {
-  var toggle = document.getElementById("toggle-mode");
-  var htmlElement = document.documentElement;
-
-  // Fungsi untuk mengatur tema
-  function setTheme(isDarkmode) {
-    if (isDarkmode) {
-      htmlElement.classList.add("dark");
-      toggle.innerText = "light_mode";
-    } else {
-      htmlElement.classList.remove("dark");
-      toggle.innerText = "dark_mode";
-    }
-  }
-
-  // Periksa status dark mode dari localStorage saat halaman pertama kali dimuat
-  var isDark = localStorage.getItem("darkMode") === "true";
-  setTheme(isDark);
-
-  if (toggle) {
-    // Tambahkan event listener pada tombol toggle
-    toggle.addEventListener("click", function () {
-      var isDark = htmlElement.classList.toggle("dark"); // Toggle class dan ambil status terbaru
-      setTheme(isDark);
-      localStorage.setItem("darkMode", isDark ? "true" : "false");
-    });
-  }
-});
-
 document.addEventListener("DOMContentLoaded", function () {
   const colorButtons = document.querySelectorAll(".color-btn");
   const productImage = document.getElementById("product-image");
@@ -58,4 +23,33 @@ document.addEventListener("DOMContentLoaded", function () {
       productImage.src = imageMap[colorId];
     });
   });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var toggle = document.getElementById("toggle-mode");
+  var htmlElement = document.documentElement;
+
+  // Fungsi untuk mengatur tema dan teks tombol
+  function setTheme(isDarkMode) {
+    if (isDarkMode) {
+      htmlElement.classList.add("dark");
+      toggle.innerText = "light_mode";
+    } else {
+      htmlElement.classList.remove("dark");
+      toggle.innerText = "dark_mode";
+    }
+  }
+
+  // Periksa tema awal dari localStorage
+  var isDark = localStorage.getItem("darkMode") === "true";
+  setTheme(isDark);
+
+  if (toggle) {
+    // Tambahkan event listener untuk tombol toggle
+    toggle.addEventListener("click", function () {
+      var isDark = htmlElement.classList.toggle("dark"); // Toggle class
+      setTheme(isDark); // Perbarui teks tombol
+      localStorage.setItem("darkMode", isDark ? "true" : "false"); // Simpan mode ke localStorage
+    });
+  }
 });

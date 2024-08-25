@@ -4,6 +4,16 @@
 
 <head>
 	<meta name="generator" content="Hugo 0.130.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <script>
+    
+    (function () {
+      if (localStorage.getItem("darkMode") === "true") {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    })();
+  </script>
   
   <script src="/js/main.js" defer></script>
 
@@ -58,15 +68,12 @@
   referrerpolicy="no-referrer"
 />
  
-<script src="/js/main.js"></script>
-
-<script src="/js/script.js" defer></script>
 
 </head>
 
 <body
   class="bg-white dark:bg-xai-950 font-sans  bg-cover bg-no-repeat text-xai-600 dark:text-xai-400  transition-colors duration-500  min-h-screen  ">
-  <header>
+  <header class="z-1000">
     <div
   class="flex px-24 text-xai-500 content-center justify-between w-full items-center h-full"
 >
