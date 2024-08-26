@@ -5,22 +5,16 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <script>
     
-    (function () {
-      if (localStorage.getItem("darkMode") === "true") {
-        document.documentElement.classList.add("dark");
-        document.getElementById("toggle-mode").innerText = "light_mode";
-      } else {
-        document.documentElement.classList.remove("dark");
-        document.getElementById("toggle-mode").innerText = "dark_mode";
-      }
-    })();
-    (function () {
-      if (localStorage.getItem("login") === null) {
-        btnLoginElement.classList.remove("hidden");
-      } else {
-        btnLoginElement.classList.add("hidden");
-      }
-    })();
+    if (localStorage.getItem("darkMode") === "true") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+    if (localStorage.getItem("darkMode") === "true") {
+      toggle.querySelector("a span").innerText = "light_mode";
+    } else {
+      toggle.querySelector("a span").innerText = "dark_mode";
+    }
   </script>
 
   <title>
@@ -92,73 +86,83 @@
 <nav class="w-auto grow flex justify-end">
   <ul class="flex space-x-8 justify-center items-center">
 
-
-
 <li id="home" class="w-full flex flex-col h-full items-start justify-center group text-center">
-    <a class="group-hover:text-lightblue-300 h-[60px] pr-2 flex flex-col items-start justify-center pt-1" href="/">Home
+    <a class="group-hover:text-lightblue-300 h-[60px] pr-2 flex flex-col items-start justify-center pt-1" href="/">
+        Home
     </a>
     <div class="w-[0%] group-hover:w-[100%] h-[10%] items-start content-start relative bg-lightblue-300 duration-500">
     </div>
 </li>
-
-
 
 <li id="products" class="w-full flex flex-col h-full items-start justify-center group text-center">
-    <a class="group-hover:text-lightblue-300 h-[60px] pr-2 flex flex-col items-start justify-center pt-1" href="/products/">Products
+    <a class="group-hover:text-lightblue-300 h-[60px] pr-2 flex flex-col items-start justify-center pt-1" href="/products/">
+        Products
     </a>
     <div class="w-[0%] group-hover:w-[100%] h-[10%] items-start content-start relative bg-lightblue-300 duration-500">
     </div>
 </li>
-
-
 
 <li id="blog" class="w-full flex flex-col h-full items-start justify-center group text-center">
-    <a class="group-hover:text-lightblue-300 h-[60px] pr-2 flex flex-col items-start justify-center pt-1" href="/posts/">Blog
+    <a class="group-hover:text-lightblue-300 h-[60px] pr-2 flex flex-col items-start justify-center pt-1" href="/posts/">
+        Blog
     </a>
     <div class="w-[0%] group-hover:w-[100%] h-[10%] items-start content-start relative bg-lightblue-300 duration-500">
     </div>
 </li>
-
-
 
 <li id="contact" class="w-full flex flex-col h-full items-start justify-center group text-center">
-    <a class="group-hover:text-lightblue-300 h-[60px] pr-2 flex flex-col items-start justify-center pt-1" href="/contact/">Contact
+    <a class="group-hover:text-lightblue-300 h-[60px] pr-2 flex flex-col items-start justify-center pt-1" href="/contact/">
+        Contact
     </a>
     <div class="w-[0%] group-hover:w-[100%] h-[10%] items-start content-start relative bg-lightblue-300 duration-500">
     </div>
 </li>
 
-
+<li id="toggle-mode" class="w-full flex flex-col h-full items-start justify-center group text-center">
+    <a class="group-hover:text-lightblue-300 h-[60px] pr-2 flex flex-col items-start justify-center pt-1">
+        <span class="material-symbols-rounded cursor-pointer text-lightblue-300 hover:text-lightblue-400"></span>
+    </a>
+    <div class="w-[0%] group-hover:w-[100%] h-[10%] items-start content-start relative bg-lightblue-300 duration-500">
+    </div>
+</li>
 
 <li id="login" class="w-full flex flex-col h-full items-start justify-center group text-center">
-    <a class="group-hover:text-lightblue-300 h-[60px] pr-2 flex flex-col items-start justify-center pt-1" href="/login/">Login
+    <a class="group-hover:text-lightblue-300 h-[60px] pr-2 flex flex-col items-start justify-center pt-1" href="/login/">
+        <span class="material-symbols-rounded cursor-pointer text-lightblue-300 hover:text-lightblue-400">login</span>
     </a>
     <div class="w-[0%] group-hover:w-[100%] h-[10%] items-start content-start relative bg-lightblue-300 duration-500">
     </div>
 </li>
 
-
-
 <li id="signup" class="w-full flex flex-col h-full items-start justify-center group text-center">
-    <a class="group-hover:text-lightblue-300 h-[60px] pr-2 flex flex-col items-start justify-center pt-1" href="/signup/">Signup
+    <a class="group-hover:text-lightblue-300 h-[60px] pr-2 flex flex-col items-start justify-center pt-1" href="/signup/">
+        <span
+            class="material-symbols-rounded cursor-pointer text-lightblue-300 hover:text-lightblue-400">person_add</span>
+    </a>
+    <div class="w-[0%] group-hover:w-[100%] h-[10%] items-start content-start relative bg-lightblue-300 duration-500">
+    </div>
+</li>
+
+<li id="logout" class="w-full flex flex-col h-full items-start justify-center group text-center">
+    <a class="group-hover:text-lightblue-300 h-[60px] pr-2 flex flex-col items-start justify-center pt-1">
+        <span class="material-symbols-rounded cursor-pointer text-lightblue-300 hover:text-lightblue-400">logout</span>
+    </a>
+    <div class="w-[0%] group-hover:w-[100%] h-[10%] items-start content-start relative bg-lightblue-300 duration-500">
+    </div>
+</li>
+
+<li id="account" class="w-full flex flex-col h-full items-start justify-center group text-center">
+    <a class="group-hover:text-lightblue-300 h-[60px] pr-2 flex flex-col items-start justify-center pt-1">
+        <div id="inner-account"
+            class="cursor-pointer justify-center items-center px-1 py-1 w-8 h-8 rounded-full border border-transparent text-base font-medium shadow-sm text-white bg-lightblue-400 hover:bg-lightblue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lightblue-500">
+        </div>
     </a>
     <div class="w-[0%] group-hover:w-[100%] h-[10%] items-start content-start relative bg-lightblue-300 duration-500">
     </div>
 </li>
 
     <div class="flex items-center justify-center space-x-4">
-      <span id="toggle-mode" class="material-symbols-rounded cursor-pointer text-lightblue-300">dark_mode</span>
-      <a id="btn-login" href="/login"
-        class="hidden cursor-pointer items-center px-4 py-1 text-lightblue-300 hover:text-lightblue-400 font-medium ">
-        Login
-      </a>
-      <a id="btn-logout"
-        class="hidden cursor-pointer items-center px-4 py-1  text-lightblue-300 hover:text-lightblue-400 font-medium ">
-        <span class="material-symbols-rounded">logout</span>
-      </a>
-      <div id="account"
-        class="hidden cursor-pointer justify-center items-center px-1 py-1 w-8 h-8 rounded-full border border-transparent text-base font-medium   shadow-sm text-white bg-lightblue-400 hover:bg-lightblue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lightblue-500">
-      </div>
+      
 
     </div>
 
@@ -250,19 +254,19 @@
       <div class="space-y-4 flex-1 p-8 justify-center content-center">
 
         <div>
-          <label for="email" class="block   font-medium text-xai-700">Email:</label>
+          <label for="email-signup" class=" block font-medium text-xai-700">Email:</label>
           <input type="email" id="email-signup" name="email" placeholder="example@email.com"
             class="mt-1 block w-full py-2 placeholder:text-xai-400 placeholder:dark:text-xai-700/50 bg-white outline-none px-2 dark:autofill:bg-xai-600 dark:bg-xai-800 rounded-md border border-xai-300 dark:border-xai-700 shadow-sm focus:border-lightblue-500 focus:dark:border-lightblue-500 focus:ring focus:ring-lightblue-500/20 text-base"
             required />
         </div>
         <div>
-          <label for="password" class="block   font-medium text-xai-700">password:</label>
+          <label for="password-signup" class="block   font-medium text-xai-700">password:</label>
           <input type="password" id="password-signup" name="password" placeholder="************"
             class="mt-1 block w-full py-2 placeholder:text-xai-400 placeholder:dark:text-xai-700/50 bg-white outline-none px-2 dark:autofill:bg-xai-600 dark:bg-xai-800 rounded-md border border-xai-300 dark:border-xai-700 shadow-sm focus:border-lightblue-500 focus:dark:border-lightblue-500 focus:ring focus:ring-lightblue-500/20 text-base"
             required />
         </div>
         <div>
-          <label for="congfirm-password" class="block   font-medium text-xai-700">Confirm Password:</label>
+          <label for="congfirm-password-signup" class="block   font-medium text-xai-700">Confirm Password:</label>
           <input type="password" id="confirm-password-signup" name="password" placeholder="************"
             class="mt-1 block w-full py-2 placeholder:text-xai-400 placeholder:dark:text-xai-700/50 bg-white outline-none px-2 dark:autofill:bg-xai-600 dark:bg-xai-800 rounded-md border border-xai-300 dark:border-xai-700 shadow-sm focus:border-lightblue-500 focus:dark:border-lightblue-500 focus:ring focus:ring-lightblue-500/20 text-base"
             required />
@@ -273,12 +277,12 @@
           <label for="checkbox" class="inline">Remember me</label>
         </div>
 
-        <div>
-          <button id="btn-signup" type="button"
-            class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-lightblue-600 hover:bg-lightblue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lightblue-500">
-            Sign up
-          </button>
-        </div>
+
+        <button id="btn-signup-form" type="button"
+          class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-lightblue-600 hover:bg-lightblue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lightblue-500">
+          Sign up
+        </button>
+
         <p>Already have an account? <a href="/login" class="text-lightblue-300 hover:text-lightblue-400">Log
             In</a>
         </p>
@@ -303,6 +307,7 @@
   <script src="/js/script.js" defer></script>
   
   <script src="/js/account.js" defer></script>
+
 </body>
 
 </html>

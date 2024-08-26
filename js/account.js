@@ -1,77 +1,137 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Default - sembunyikan elemen dengan id "login" dan "signup"
-  const loginElement = document.getElementById("login");
-  const signupElement = document.getElementById("signup");
-  const btnLoginElement = document.getElementById("btn-login");
-  const btnLoginFormElement = document.getElementById("btn-login-form");
-  const accountElement = document.getElementById("account");
-  const btnLogoutElement = document.getElementById("btn-logout");
+  function checkLoginStatus() {
+    const loginStatus = localStorage.getItem("login");
 
-  loginElement.classList.add("hidden");
-  signupElement.classList.add("hidden");
+    const loginElement = document.getElementById("login");
+    const signupElement = document.getElementById("signup");
+    const accountElement = document.getElementById("account");
+    const logoutElement = document.getElementById("logout");
+    const innerAccountElement = document.getElementById("inner-account");
+    const storedEmail = localStorage.getItem("email");
 
-  // Cek local storage
-  if (localStorage.getItem("login") === null) {
-    btnLoginElement.classList.remove("hidden");
-    btnLoginElement.classList.add("inline-flex");
-    btnLogoutElement.classList.add("hidden");
-    accountElement.classList.add("hidden");
-    accountElement.classList.remove("flex");
-  } else {
-    btnLoginElement.classList.add("hidden");
-    btnLoginElement.classList.remove("inline-flex");
-    accountElement.classList.remove("hidden");
-    accountElement.classList.add("flex");
-    accountElement.innerText = localStorage
-      .getItem("email")
-      .charAt(0)
-      .toUpperCase();
-    btnLogoutElement.classList.remove("hidden");
-    btnLogoutElement.classList.add("inline-flex");
-  }
-
-  // Event listener untuk signup
-  const btnsignup = document.getElementById("btn-signup");
-  if (btnsignup) {
-    btnsignup.addEventListener("click", function () {
-      const email = document.getElementById("email-signup").value.toLowerCase(); // Ubah email menjadi huruf kecil
-      const password = document.getElementById("password-signup").value;
-      const confirmPassword = document.getElementById(
-        "confirm-password-signup"
-      ).value;
-
-      if (password === confirmPassword) {
-        localStorage.setItem("email", email); // Simpan email dalam huruf kecil
-        localStorage.setItem("password", password);
-        window.location.href = "/login";
-      } else {
-        console.log("Password dan konfirmasi password tidak sama.");
+    function updateBackgroundClasses(element) {
+      const innerDiv = element.querySelector("div:not(#inner-account)");
+      if (innerDiv) {
+        innerDiv.classList.remove("bg-lightblue-300");
+        innerDiv.classList.add("bg-lightblue-300/0");
+        innerDiv.classList.remove("group-hover:w-[100%]");
+        innerDiv.classList.add("group-hover:w-[0%]");
       }
-    });
-  }
+    }
 
-  // Event listener untuk login
-  if (btnLoginFormElement) {
-    btnLoginFormElement.addEventListener("click", function () {
-      const email = document.getElementById("email-login").value.toLowerCase(); // Ubah email menjadi huruf kecil
-      const password = document.getElementById("password-login").value;
-      const storedEmail = localStorage.getItem("email");
-      const storedPassword = localStorage.getItem("password");
-
-      if (email === storedEmail && password === storedPassword) {
-        localStorage.setItem("login", "true");
-        window.location.href = "/";
-      } else {
-        console.log("Email atau password salah.");
+    if (loginStatus !== "true") {
+      if (loginElement) {
+        loginElement.classList.add("flex");
+        loginElement.classList.remove("hidden");
+        updateBackgroundClasses(loginElement);
       }
-    });
+      if (signupElement) {
+        signupElement.classList.add("flex");
+        signupElement.classList.remove("hidden");
+        updateBackgroundClasses(signupElement);
+      }
+      if (accountElement) {
+        accountElement.classList.add("hidden");
+        accountElement.classList.remove("flex");
+        updateBackgroundClasses(accountElement);
+      }
+      if (logoutElement) {
+        logoutElement.classList.add("hidden");
+        logoutElement.classList.remove("flex");
+        updateBackgroundClasses(logoutElement);
+      }
+    } else {
+      if (accountElement) {
+        accountElement.classList.add("flex");
+        accountElement.classList.remove("hidden");
+        updateBackgroundClasses(accountElement);
+      }
+      if (logoutElement) {
+        logoutElement.classList.add("flex");
+        logoutElement.classList.remove("hidden");
+        updateBackgroundClasses(logoutElement);
+      }
+      if (loginElement) {
+        loginElement.classList.add("hidden");
+        loginElement.classList.remove("flex");
+        updateBackgroundClasses(loginElement);
+      }
+      if (signupElement) {
+        signupElement.classList.add("hidden");
+        signupElement.classList.remove("flex");
+        updateBackgroundClasses(signupElement);
+      }
+      if (innerAccountElement && storedEmail) {
+        const firstLetter = storedEmail.charAt(0).toUpperCase();
+        innerAccountElement.innerText = firstLetter;
+      }
+    }
   }
 
-  // Event listener untuk logout
-  if (btnLogoutElement) {
-    btnLogoutElement.addEventListener("click", function () {
-      localStorage.removeItem("login"); // Hanya hapus nilai 'login'
-      window.location.href = "/";
-    });
+  function signup() {
+    const emailSignup = document
+      .getElementById("email-signup")
+      ?.value.toLowerCase();
+    const passwordSignup = document.getElementById("password-signup")?.value;
+    const confirmPasswordSignup = document.getElementById(
+      "confirm-password-signup"
+    )?.value;
+
+    if (passwordSignup !== confirmPasswordSignup) {
+      console.log("Password dan Konfirmasi Password tidak sama.");
+      return;
+    }
+
+    if (!validateEmail(emailSignup)) {
+      console.log("Format email tidak valid.");
+      return;
+    }
+
+    localStorage.setItem("email", emailSignup);
+    localStorage.setItem("password", passwordSignup);
+    window.location.href = "/login";
   }
+
+  function login() {
+    const emailLogin = document
+      .getElementById("email-login")
+      ?.value.toLowerCase();
+    const passwordLogin = document.getElementById("password-login")?.value;
+
+    const storedEmail = localStorage.getItem("email");
+    const storedPassword = localStorage.getItem("password");
+
+    if (emailLogin === storedEmail && passwordLogin === storedPassword) {
+      localStorage.setItem("login", "true");
+
+      const firstLetter = emailLogin.charAt(0).toUpperCase();
+      document.getElementById("inner-account").innerText = firstLetter;
+
+      window.location.href = "/"; // Redirect setelah innerText diubah
+    } else {
+      console.log("Email atau password salah.");
+    }
+  }
+
+  function logout() {
+    localStorage.removeItem("login"); // Menghapus status login dari localStorage
+    window.location.href = "/login"; // Mengarahkan kembali ke halaman login
+  }
+
+  function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+  }
+
+  // Hanya tambahkan event listener jika elemennya ada
+  const signupBtn = document.getElementById("btn-signup-form");
+  if (signupBtn) signupBtn.addEventListener("click", signup);
+
+  const loginBtn = document.getElementById("btn-login-form");
+  if (loginBtn) loginBtn.addEventListener("click", login);
+
+  const logoutBtn = document.getElementById("logout");
+  if (logoutBtn) logoutBtn.addEventListener("click", logout);
+
+  checkLoginStatus();
 });

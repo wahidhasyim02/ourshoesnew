@@ -2,10 +2,10 @@
 (function () {
   if (localStorage.getItem("darkMode") === "true") {
     document.documentElement.classList.add("dark");
-    document.getElementById("toggle-mode").innerText = "light_mode";
+    document.getElementById("#toggle-mode-li a").innerText = "light_mode";
   } else {
     document.documentElement.classList.remove("dark");
-    document.getElementById("toggle-mode").innerText = "dark_mode";
+    document.getElementById("#toggle-mode-li a").innerText = "dark_mode";
   }
 })();
 (function () {

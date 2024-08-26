@@ -25,18 +25,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Script Darkmode
 document.addEventListener("DOMContentLoaded", function () {
   var toggle = document.getElementById("toggle-mode");
+  var toggleSpan = toggle.querySelector("a span");
+  var toggleDiv = toggle.querySelector("div");
   var htmlElement = document.documentElement;
 
-  // Fungsi untuk mengatur tema dan teks tombol
+  // Fungsi untuk mengatur tema dan teks ikon
   function setTheme(isDarkMode) {
     if (isDarkMode) {
       htmlElement.classList.add("dark");
-      toggle.innerText = "light_mode";
+      toggleSpan.innerText = "light_mode";
     } else {
       htmlElement.classList.remove("dark");
-      toggle.innerText = "dark_mode";
+      toggleSpan.innerText = "dark_mode";
     }
   }
 
@@ -44,11 +47,17 @@ document.addEventListener("DOMContentLoaded", function () {
   var isDark = localStorage.getItem("darkMode") === "true";
   setTheme(isDark);
 
+  // Sembunyikan div di dalam li
+  if (toggleDiv) {
+    toggleDiv.classList.remove("bg-lightblue-300");
+    toggleDiv.classList.add("bg-lightblue-300/0");
+  }
+
   if (toggle) {
     // Tambahkan event listener untuk tombol toggle
     toggle.addEventListener("click", function () {
       var isDark = htmlElement.classList.toggle("dark"); // Toggle class
-      setTheme(isDark); // Perbarui teks tombol
+      setTheme(isDark); // Perbarui teks ikon
       localStorage.setItem("darkMode", isDark ? "true" : "false"); // Simpan mode ke localStorage
     });
   }
