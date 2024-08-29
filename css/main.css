@@ -1135,6 +1135,11 @@ input[type="checkbox"]:checked:focus {
   background-color: rgb(199 137 11 / var(--tw-bg-opacity)) !important;
 }
 
+.bg-blue-500 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity)) !important;
+}
+
 .bg-lightblue-300 {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(125 211 252 / var(--tw-bg-opacity)) !important;
