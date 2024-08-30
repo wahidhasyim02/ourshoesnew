@@ -6,21 +6,35 @@
     <description>Recent content on OurShoes</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Aug 2024 11:03:34 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 30 Aug 2024 11:04:34 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sepatu 6</title>
+      <link>http://localhost:1313/products/item-6/</link>
+      <pubDate>Fri, 30 Aug 2024 11:04:34 +0700</pubDate>
+      <guid>http://localhost:1313/products/item-6/</guid>
+      <description>Sit officia Lorem aliquip eu deserunt consectetur. Aute proident deserunt in nulla aliquip dolore ipsum Lorem ut cupidatat consectetur sit sint laborum.</description>
+    </item>
+    <item>
+      <title>Sepatu 5</title>
+      <link>http://localhost:1313/products/item-5/</link>
+      <pubDate>Fri, 30 Aug 2024 11:03:34 +0700</pubDate>
+      <guid>http://localhost:1313/products/item-5/</guid>
+      <description>Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia. Velit id fugiat occaecat do tempor. Sit officia Lorem aliquip eu deserunt consectetur.</description>
+    </item>
     <item>
       <title>Sepatu 4</title>
       <link>http://localhost:1313/products/item-4/</link>
       <pubDate>Sat, 24 Aug 2024 11:03:34 +0700</pubDate>
       <guid>http://localhost:1313/products/item-4/</guid>
-      <description></description>
+      <description>Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.</description>
     </item>
     <item>
       <title>Sepatu 3</title>
       <link>http://localhost:1313/products/item-3/</link>
       <pubDate>Sat, 24 Aug 2024 10:58:34 +0700</pubDate>
       <guid>http://localhost:1313/products/item-3/</guid>
-      <description></description>
+      <description>Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum.</description>
     </item>
     <item>
       <title>Contact</title>
@@ -44,39 +58,39 @@
       <description></description>
     </item>
     <item>
-      <title>Product Sepatu 1</title>
+      <title>Sepatu 2</title>
+      <link>http://localhost:1313/products/item-2/</link>
+      <pubDate>Thu, 22 Aug 2024 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/products/item-2/</guid>
+      <description>This is the full content of Product Item 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+    <item>
+      <title>Sepatu 1</title>
       <link>http://localhost:1313/products/item-1/</link>
       <pubDate>Wed, 21 Aug 2024 10:00:00 -0700</pubDate>
       <guid>http://localhost:1313/products/item-1/</guid>
-      <description>This is the full content of Product Item 1.</description>
+      <description>This is the full content of Product Item 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum modi quibusdam accusamus adipisci, autemplaceat?</description>
     </item>
     <item>
-      <title>Product Sepatu 2</title>
-      <link>http://localhost:1313/products/item-2/</link>
-      <pubDate>Wed, 21 Aug 2024 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/products/item-2/</guid>
-      <description>This is the full content of Product Item 2.</description>
+      <title>Tempor proident</title>
+      <link>http://localhost:1313/posts/post-1/</link>
+      <pubDate>Thu, 15 Aug 2024 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/post-1/</guid>
+      <description>I will make a blog with good information. Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia.</description>
     </item>
     <item>
       <title>Incididunt sint cupidatat</title>
       <link>http://localhost:1313/posts/post-3/</link>
       <pubDate>Thu, 15 Feb 2024 10:00:00 -0700</pubDate>
       <guid>http://localhost:1313/posts/post-3/</guid>
-      <description>Dua Anim eiusmod irure incididunt sint cupidatat.</description>
+      <description>Dua Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum.</description>
     </item>
     <item>
       <title>Zree eiusmod irure</title>
       <link>http://localhost:1313/posts/post-2/</link>
       <pubDate>Wed, 15 Feb 2023 10:00:00 -0700</pubDate>
       <guid>http://localhost:1313/posts/post-2/</guid>
-      <description>Dua Anim eiusmod irure incididunt sint cupidatat.</description>
-    </item>
-    <item>
-      <title>Tempor proident</title>
-      <link>http://localhost:1313/posts/post-1/</link>
-      <pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/post-1/</guid>
-      <description>Satu Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod.</description>
+      <description>Dua Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum.</description>
     </item>
   </channel>
 </rss>
