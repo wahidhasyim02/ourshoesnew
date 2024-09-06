@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial on SeduhRasa</title>
+    <link>http://localhost:1313/tags/tutorial/</link>
+    <description>Recent content in Tutorial on SeduhRasa</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Jan 2024 09:00:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Enjoy Traditional Coffee at SeduhRasa</title>
+      <link>http://localhost:1313/news/post-4/</link>
+      <pubDate>Sat, 20 Jan 2024 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/news/post-4/</guid>
+      <description>Want to take a bit of the SeduhRasa experience home with you? Read our blog for tips on brewing the perfect traditional coffee, straight from our coffee experts.</description>
+    </item>
+  </channel>
+</rss>

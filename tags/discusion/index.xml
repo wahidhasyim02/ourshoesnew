@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Discusion on SeduhRasa</title>
+    <link>http://localhost:1313/tags/discusion/</link>
+    <description>Recent content in Discusion on SeduhRasa</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Jan 2024 10:00:00 -0740</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/discusion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exploring the World of Single-Origin Coffee at SeduhRasa</title>
+      <link>http://localhost:1313/news/post-3/</link>
+      <pubDate>Mon, 15 Jan 2024 10:00:00 -0740</pubDate>
+      <guid>http://localhost:1313/news/post-3/</guid>
+      <description>Dive into the fascinating world of single-origin coffee with our upcoming workshop! Our baristas will guide you through the unique flavors and characteristics of different coffee beans from various regions of Indonesia.</description>
+    </item>
+    <item>
+      <title>Next Event: The Art of Traditional Coffee Brewing</title>
+      <link>http://localhost:1313/news/post-1/</link>
+      <pubDate>Thu, 16 Feb 2023 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/news/post-1/</guid>
+      <description>Mark your calendar for our special event on March 20, 2023, where we explore the rich history and art of traditional coffee brewing techniques.</description>
+    </item>
+    <item>
+      <title>This Week’s Event: History Talk on &#34;The Journey to Indonesian Independence</title>
+      <link>http://localhost:1313/news/post-2/</link>
+      <pubDate>Wed, 15 Feb 2023 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/news/post-2/</guid>
+      <description>Join us for an engaging discussion about Indonesia’s path to independence, led by local historians. The event will also feature inspirational poetry readings on the theme of struggle.</description>
+    </item>
+  </channel>
+</rss>
