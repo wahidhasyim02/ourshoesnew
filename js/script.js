@@ -62,3 +62,45 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".view-button");
+  const container = document.getElementById("view-container");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const view = this.getAttribute("data-view");
+
+      if (view === "grid") {
+        container.className = "grid grid-cols-2 gap-4"; // Tampilan grid
+      } else if (view === "list") {
+        container.className = "flex flex-col space-y-4"; // Tampilan list
+      } else if (view === "details") {
+        container.className = "flex flex-col space-y-2"; // Tampilan detail
+        // Tambahkan logika khusus untuk detail view jika diperlukan
+      }
+    });
+  });
+});
+
+// Script untuk mengatur view
+/* document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".view-button");
+  const container = document.getElementById("view-container");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const view = this.getAttribute("data-view");
+
+      if (view === "grid") {
+        container.className = "grid grid-cols-2 gap-4"; // Tampilan grid
+      } else if (view === "list") {
+        container.className = "flex flex-col space-y-4"; // Tampilan list
+      } else if (view === "details") {
+        container.className = "flex flex-col space-y-2"; // Tampilan detail
+        // Tambahkan logika khusus untuk detail view jika diperlukan
+      }
+    });
+  });
+});
+*/

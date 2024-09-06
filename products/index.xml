@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My Products on OurShoes</title>
-    <link>http://localhost:1313/products/</link>
+    <link>http://localhost:13176/products/</link>
     <description>Recent content in My Products on OurShoes</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 30 Aug 2024 11:04:34 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/products/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:13176/products/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Sepatu 6</title>
-      <link>http://localhost:1313/products/item-6/</link>
+      <title>Shoes Reebok KZ100</title>
+      <link>http://localhost:13176/products/item-6/</link>
       <pubDate>Fri, 30 Aug 2024 11:04:34 +0700</pubDate>
-      <guid>http://localhost:1313/products/item-6/</guid>
+      <guid>http://localhost:13176/products/item-6/</guid>
       <description>Sit officia Lorem aliquip eu deserunt consectetur. Aute proident deserunt in nulla aliquip dolore ipsum Lorem ut cupidatat consectetur sit sint laborum.</description>
     </item>
     <item>
       <title>Sepatu 5</title>
-      <link>http://localhost:1313/products/item-5/</link>
+      <link>http://localhost:13176/products/item-5/</link>
       <pubDate>Fri, 30 Aug 2024 11:03:34 +0700</pubDate>
-      <guid>http://localhost:1313/products/item-5/</guid>
+      <guid>http://localhost:13176/products/item-5/</guid>
       <description>Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia. Velit id fugiat occaecat do tempor. Sit officia Lorem aliquip eu deserunt consectetur.</description>
     </item>
     <item>
       <title>Sepatu 4</title>
-      <link>http://localhost:1313/products/item-4/</link>
+      <link>http://localhost:13176/products/item-4/</link>
       <pubDate>Sat, 24 Aug 2024 11:03:34 +0700</pubDate>
-      <guid>http://localhost:1313/products/item-4/</guid>
+      <guid>http://localhost:13176/products/item-4/</guid>
       <description>Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.</description>
     </item>
     <item>
       <title>Sepatu 3</title>
-      <link>http://localhost:1313/products/item-3/</link>
+      <link>http://localhost:13176/products/item-3/</link>
       <pubDate>Sat, 24 Aug 2024 10:58:34 +0700</pubDate>
-      <guid>http://localhost:1313/products/item-3/</guid>
+      <guid>http://localhost:13176/products/item-3/</guid>
       <description>Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum.</description>
     </item>
     <item>
       <title>Sepatu 2</title>
-      <link>http://localhost:1313/products/item-2/</link>
+      <link>http://localhost:13176/products/item-2/</link>
       <pubDate>Thu, 22 Aug 2024 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/products/item-2/</guid>
+      <guid>http://localhost:13176/products/item-2/</guid>
       <description>This is the full content of Product Item 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
     </item>
     <item>
-      <title>Sepatu 1</title>
-      <link>http://localhost:1313/products/item-1/</link>
+      <title>Shoes Adibas X23</title>
+      <link>http://localhost:13176/products/item-1/</link>
       <pubDate>Wed, 21 Aug 2024 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/products/item-1/</guid>
+      <guid>http://localhost:13176/products/item-1/</guid>
       <description>This is the full content of Product Item 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum modi quibusdam accusamus adipisci, autemplaceat?</description>
     </item>
   </channel>

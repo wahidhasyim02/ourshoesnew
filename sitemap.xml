@@ -2,62 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:13176/tags/green/</loc>
+    <lastmod>2024-09-03T10:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:13176/posts/post-4/</loc>
+    <lastmod>2024-09-03T10:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:13176/</loc>
+    <lastmod>2024-09-03T10:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:13176/tags/red/</loc>
+    <lastmod>2024-09-03T10:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:13176/tags/</loc>
+    <lastmod>2024-09-03T10:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:13176/products/item-6/</loc>
     <lastmod>2024-08-30T11:04:34+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/products/item-6/</loc>
-    <lastmod>2024-08-30T11:04:34+07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/products/item-5/</loc>
+    <loc>http://localhost:13176/products/item-5/</loc>
     <lastmod>2024-08-30T11:03:34+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/products/item-4/</loc>
+    <loc>http://localhost:13176/products/item-4/</loc>
     <lastmod>2024-08-24T11:03:34+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/products/item-3/</loc>
+    <loc>http://localhost:13176/products/item-3/</loc>
     <lastmod>2024-08-24T10:58:34+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>http://localhost:13176/contact/</loc>
     <lastmod>2024-08-23T10:00:00+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/login/</loc>
+    <loc>http://localhost:13176/login/</loc>
     <lastmod>2024-08-23T10:00:00+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/signup/</loc>
+    <loc>http://localhost:13176/signup/</loc>
     <lastmod>2024-08-23T10:00:00+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/products/item-2/</loc>
+    <loc>http://localhost:13176/products/item-2/</loc>
     <lastmod>2024-08-22T10:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/products/item-1/</loc>
+    <loc>http://localhost:13176/tags/yellow/</loc>
+    <lastmod>2024-08-22T10:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:13176/tags/blue/</loc>
     <lastmod>2024-08-21T10:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/red/</loc>
+    <loc>http://localhost:13176/tags/orange/</loc>
+    <lastmod>2024-08-21T10:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:13176/products/item-1/</loc>
+    <lastmod>2024-08-21T10:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:13176/posts/post-1/</loc>
     <lastmod>2024-08-15T09:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-08-15T09:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/post-1/</loc>
-    <lastmod>2024-08-15T09:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/green/</loc>
+    <loc>http://localhost:13176/posts/post-3/</loc>
     <lastmod>2024-02-15T10:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-3/</loc>
-    <lastmod>2024-02-15T10:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/post-2/</loc>
+    <loc>http://localhost:13176/posts/post-2/</loc>
     <lastmod>2023-02-15T10:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:13176/posts/</loc>
     <lastmod>2023-01-01T08:30:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/products/</loc>
+    <loc>http://localhost:13176/products/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:13176/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>http://localhost:13176/series/</loc>
   </url>
 </urlset>

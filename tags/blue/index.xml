@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blue on OurShoes</title>
-    <link>http://localhost:1313/tags/blue/</link>
+    <link>http://localhost:13176/tags/blue/</link>
     <description>Recent content in Blue on OurShoes</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Mar 2023 11:00:00 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/blue/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Aug 2024 10:00:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:13176/tags/blue/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Post 3</title>
-      <link>http://localhost:1313/posts/post-3/</link>
-      <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/post-3/</guid>
-      <description>Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis.</description>
+      <title>Shoes Adibas X23</title>
+      <link>http://localhost:13176/products/item-1/</link>
+      <pubDate>Wed, 21 Aug 2024 10:00:00 -0700</pubDate>
+      <guid>http://localhost:13176/products/item-1/</guid>
+      <description>This is the full content of Product Item 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum modi quibusdam accusamus adipisci, autemplaceat?</description>
     </item>
   </channel>
 </rss>

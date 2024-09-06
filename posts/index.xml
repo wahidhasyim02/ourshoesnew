@@ -2,31 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Collaboration with Craftsmen Produces Quality Products on OurShoes</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:13176/posts/</link>
     <description>Recent content in Collaboration with Craftsmen Produces Quality Products on OurShoes</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Aug 2024 09:00:00 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Sep 2024 10:00:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:13176/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Int cupidatat</title>
+      <link>http://localhost:13176/posts/post-4/</link>
+      <pubDate>Tue, 03 Sep 2024 10:00:00 -0700</pubDate>
+      <guid>http://localhost:13176/posts/post-4/</guid>
+      <description>Dua Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum.</description>
+    </item>
     <item>
       <title>Tempor proident</title>
-      <link>http://localhost:1313/posts/post-1/</link>
+      <link>http://localhost:13176/posts/post-1/</link>
       <pubDate>Thu, 15 Aug 2024 09:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/post-1/</guid>
+      <guid>http://localhost:13176/posts/post-1/</guid>
       <description>I will make a blog with good information. Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia.</description>
     </item>
     <item>
       <title>Incididunt sint cupidatat</title>
-      <link>http://localhost:1313/posts/post-3/</link>
+      <link>http://localhost:13176/posts/post-3/</link>
       <pubDate>Thu, 15 Feb 2024 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/post-3/</guid>
+      <guid>http://localhost:13176/posts/post-3/</guid>
       <description>Dua Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum.</description>
     </item>
     <item>
       <title>Zree eiusmod irure</title>
-      <link>http://localhost:1313/posts/post-2/</link>
+      <link>http://localhost:13176/posts/post-2/</link>
       <pubDate>Wed, 15 Feb 2023 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/post-2/</guid>
+      <guid>http://localhost:13176/posts/post-2/</guid>
       <description>Dua Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum.</description>
     </item>
   </channel>

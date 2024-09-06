@@ -2,24 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Green on OurShoes</title>
-    <link>http://localhost:1313/tags/green/</link>
+    <link>http://localhost:13176/tags/green/</link>
     <description>Recent content in Green on OurShoes</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Feb 2024 10:00:00 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/green/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Sep 2024 10:00:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:13176/tags/green/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Int cupidatat</title>
+      <link>http://localhost:13176/posts/post-4/</link>
+      <pubDate>Tue, 03 Sep 2024 10:00:00 -0700</pubDate>
+      <guid>http://localhost:13176/posts/post-4/</guid>
+      <description>Dua Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum.</description>
+    </item>
+    <item>
+      <title>Sepatu 2</title>
+      <link>http://localhost:13176/products/item-2/</link>
+      <pubDate>Thu, 22 Aug 2024 10:00:00 -0700</pubDate>
+      <guid>http://localhost:13176/products/item-2/</guid>
+      <description>This is the full content of Product Item 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mci, autem placeat?</description>
+    </item>
+    <item>
+      <title>Shoes Adibas X23</title>
+      <link>http://localhost:13176/products/item-1/</link>
+      <pubDate>Wed, 21 Aug 2024 10:00:00 -0700</pubDate>
+      <guid>http://localhost:13176/products/item-1/</guid>
+      <description>This is the full content of Product Item 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum modi quibusdam accusamus adipisci, autemplaceat?</description>
+    </item>
     <item>
       <title>Incididunt sint cupidatat</title>
-      <link>http://localhost:1313/posts/post-3/</link>
+      <link>http://localhost:13176/posts/post-3/</link>
       <pubDate>Thu, 15 Feb 2024 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/post-3/</guid>
+      <guid>http://localhost:13176/posts/post-3/</guid>
       <description>Dua Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum.</description>
     </item>
     <item>
       <title>Zree eiusmod irure</title>
-      <link>http://localhost:1313/posts/post-2/</link>
+      <link>http://localhost:13176/posts/post-2/</link>
       <pubDate>Wed, 15 Feb 2023 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/post-2/</guid>
+      <guid>http://localhost:13176/posts/post-2/</guid>
       <description>Dua Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum.</description>
     </item>
   </channel>
